@@ -17,4 +17,9 @@ import { TemplateComponent } from './core/components/template/template.component
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+  constructor(){
+    console.log('app.module.ts');
+  }
+ }
