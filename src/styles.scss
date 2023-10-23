@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+form {
+  label {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.625rem;
+  }
+
+  .input {
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid grey;
+  }
+}
+
+.card {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 5px;
+  width: 500px;
+}
