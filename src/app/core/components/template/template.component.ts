@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-template',
@@ -15,5 +15,8 @@ import { Component } from '@angular/core';
   // ]
 })
 export class TemplateComponent {
-
+  @HostListener('click', ['$event'])
+  show() {
+    alert('Template Url ...');
+  }
 }
