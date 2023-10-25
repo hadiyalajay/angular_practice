@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './inline-style.component.html',
   styles: [
     `
-      p {
+      .aqua {
         padding: 15px;
         border-radius: 10px;
         background-color: aqua;

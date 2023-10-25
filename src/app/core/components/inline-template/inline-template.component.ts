@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-inline-template',
   template: `
     <div class="container">
-      <p> Inline Template </p>
+      <p class='yellow'> Inline Template </p>
     </div>
   `,
   styleUrls: ['./inline-template.component.scss'],

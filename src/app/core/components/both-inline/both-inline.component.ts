@@ -4,12 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-both-inline',
   template: `
     <div class="container">
-      <p> Both Inline </p>
+      <p class="olive">Both Inline</p>
     </div>
   `,
   styles: [
     `
-      p {
+      .olive {
         padding: 15px;
         background-color: olive;
         border-radius: 10px;
