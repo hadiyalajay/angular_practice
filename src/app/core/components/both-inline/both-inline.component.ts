@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-both-inline',
   template: `
     <div class="container">
-      <p> both-inline </p>
+      <p> Both Inline </p>
     </div>
   `,
   styles: [
