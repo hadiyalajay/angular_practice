@@ -13,19 +13,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     TemplateComponent,
     ToDoListComponent,
-    CounterComponent
+    CounterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
-  
-  constructor(){
+  constructor() {
     console.log('app.module.ts');
   }
- }
+}

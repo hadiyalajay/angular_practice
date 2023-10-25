@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'Angular Practice';
 
   constructor() {
-    console.log('app.components.ts');
+    console.log('app.component.ts');
   }
 }
