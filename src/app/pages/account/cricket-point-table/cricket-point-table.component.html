@@ -1,0 +1,43 @@
+<div class="body">
+    <div class="d-flex justify-content-center p-5">
+        <button class="btn btn-success mr-5" type="button" (click)="higestWin()"> Higest Win Team </button>
+        <button class="btn btn-danger mr-5" type="button" (click)="higestLoss()"> Higest Loss Team </button>
+        <button class="btn btn-warning mr-5" type="button" (click)="higestRunrate()"> Higest Run Rate </button>
+        <button class="btn btn-primary mr-5" type="button" (click)="higestPts()"> Higest Point </button>
+    </div>
+    <div class="d-flex justify-content-center">
+        <table>
+            <thead>
+                <tr>
+                    <td>Team</td>
+                    <td></td>
+                    <td>M</td>
+                    <td>W</td>
+                    <td>L</td>
+                    <td>T</td>
+                    <td>NRR</td>
+                    <td>Pts</td>
+                    <td>Last 5</td>
+                </tr>
+            </thead>
+            <tbody *ngFor="let team of cricketTeam;let ind=index">
+                <tr>
+                    <td>{{ind+1}}</td>
+                    <td>
+                        <img src="{{team.img}}" alt="logo" class="mr-3">
+                        {{team.team}}
+                    </td>
+                    <td>{{team.match}}</td>
+                    <td>{{team.win}}</td>
+                    <td>{{team.loss}}</td>
+                    <td>{{team.tied}}</td>
+                    <td>{{team.nrr}}</td>
+                    <td>{{team.pts}}</td>
+                    <td>
+                        <span *ngFor="let last of team.lastFive">{{last}} &nbsp;&nbsp;</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
