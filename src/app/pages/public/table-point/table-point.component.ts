@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-cricket-point-table',
-  templateUrl: './cricket-point-table.component.html',
-  styleUrls: ['./cricket-point-table.component.scss'],
+  selector: 'app-table-point',
+  templateUrl: './table-point.component.html',
+  styleUrls: ['./table-point.component.scss'],
 })
-export class CricketPointTableComponent {
+export class TablePointComponent {
   cricketTeam = [
     {
       team: 'India',
@@ -24,7 +24,7 @@ export class CricketPointTableComponent {
       win: 6,
       loss: 1,
       tied: 0,
-      nrr: +2.290,
+      nrr: +2.29,
       pts: 12,
       lastFive: [1, 1, 1, 1, 0],
       img: 'assets/image/sa.png',
@@ -35,7 +35,7 @@ export class CricketPointTableComponent {
       win: 4,
       loss: 2,
       tied: 0,
-      nrr: +0.970,
+      nrr: +0.97,
       pts: 8,
       lastFive: [1, 1, 1, 1, 0],
       img: 'assets/image/aus.png',
@@ -57,7 +57,7 @@ export class CricketPointTableComponent {
       win: 4,
       loss: 3,
       tied: 0,
-      nrr: -0.330,
+      nrr: -0.33,
       pts: 8,
       lastFive: [1, 1, 1, 0, 1],
       img: 'assets/image/afg.png',
