@@ -6,10 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./counter.component.scss'],
 })
 export class CounterComponent {
-  count: any = 0;
+  count = 0;
 
   counter(type: string) {
-    type === 'add' ? this.count++ : this.count--;
+    type == 'plus' ? this.count++ : this.count--;
   }
 }
-

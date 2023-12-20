@@ -1,30 +1,28 @@
-<div class="container">
-    <form [formGroup]="listForm" (ngSubmit)="submit()">
-        <div class="form-group">
-            <label class="label">Task List</label>
-            <input type="text" class="form-control input" formControlName="task">
-        </div>
-        <button type="submit" class="btn btn-primary"> Add </button>
-    </form>
-
-    <hr>
-
-
-    <div>
-        <div class="pt-3 mb-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Task List</h5>
-                    <hr>
-                    <div *ngFor="let list of  listOfTask;let ind=index">
-                        <div class="d-flex justify-content-between mb-2">
-                            <h5> {{ ind + 1 }} . {{ list }} </h5>
-                            <div>
-                                <button type="button" class="btn btn-primary" (click)="delete(ind)"> Remove </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="container pt-5">
+  <form [formGroup]="listForm" (ngSubmit)="submit()">
+    <div class="form-group">
+      <label class="label">Task List</label>
+      <input
+        type="text"
+        class="form-control input w-50"
+        formControlName="task"
+      />
     </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+  </form>
+
+  <div class="pt-5 pb-5 mb-3">
+    <h5 class="card-title">Task List</h5>
+    <hr />
+    <div *ngFor="let list of listOfTask; let ind = index">
+      <div class="d-flex justify-content-between mb-2">
+        <h5>{{ ind + 1 }} . {{ list }}</h5>
+        <div>
+          <button type="button" class="btn btn-primary" (click)="delete(ind)">
+            Remove
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
