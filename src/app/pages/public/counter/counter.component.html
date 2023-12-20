@@ -1,15 +1,21 @@
-<div class="counter">
-  <h1>{{ count }}</h1>
-  <div class="d-flex justify-content-around">
-    <div>
-      <button type="button" class="btn btn-primary" (click)="counter('minus')">
-        - -
-      </button>
-    </div>
-    <div>
-      <button type="button" class="btn btn-primary" (click)="counter('plus')">
-        ++
-      </button>
+<div class="container">
+  <div class="counter">
+    <h1>{{ count }}</h1>
+    <div class="d-flex justify-content-around">
+      <div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="counter('minus')"
+        >
+          - -
+        </button>
+      </div>
+      <div>
+        <button type="button" class="btn btn-primary" (click)="counter('plus')">
+          ++
+        </button>
+      </div>
     </div>
   </div>
 </div>

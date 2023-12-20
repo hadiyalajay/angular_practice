@@ -1,13 +1,15 @@
-<div class="d-flex">
-  <div class="p-1" *ngFor="let number of numbers; let ind = index">
-    <button type="button" class="btn btn-primary" (click)="transfer(ind)">
-      {{ number }}
-    </button>
+<div class="container">
+  <div class="d-flex">
+    <div class="p-1" *ngFor="let number of numbers; let ind = index">
+      <button type="button" class="btn btn-primary" (click)="transfer(ind)">
+        {{ number }}
+      </button>
+    </div>
   </div>
-</div>
 
-<div class="d-flex">
-  <div class="p-1" *ngFor="let swapping of swapNumbers">
-    <button type="button" class="btn btn-warning">{{ swapping }}</button>
+  <div class="d-flex">
+    <div class="p-1" *ngFor="let swapping of swapNumbers">
+      <button type="button" class="btn btn-warning">{{ swapping }}</button>
+    </div>
   </div>
 </div>

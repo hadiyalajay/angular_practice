@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./swap-numbers.component.scss'],
 })
 export class SwapNumbersComponent {
-  numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 111];
+  numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   swapNumbers: number[] = [];
 
   transfer(indexNumber: number) {
