@@ -9,6 +9,7 @@ import { CounterComponent } from './pages/public/counter/counter.component';
 import { ToDoListComponent } from './pages/public/to-do-list/to-do-list.component';
 import { DigitalClockComponent } from './pages/public/digital-clock/digital-clock.component';
 import { PracticeComponent } from './pages/public/practice/practice.component';
+import { SwapNumbersComponent } from './pages/public/swap-numbers/swap-numbers.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { PracticeComponent } from './pages/public/practice/practice.component';
     ToDoListComponent,
     DigitalClockComponent,
     PracticeComponent,
+    SwapNumbersComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
