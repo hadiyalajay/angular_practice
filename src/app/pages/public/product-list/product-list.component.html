@@ -1,0 +1,29 @@
+<div class="main">
+  <h3>Electronics</h3>
+  <div class="d-flex">
+    <div class="display" *ngFor="let list of electonicsProduct">
+      <div class="card">
+        <img [src]="list.img" alt="img" />
+      </div>
+      <div>
+        <p class="text">{{ list.name }}</p>
+        <p>{{ list.brand }}</p>
+        <p>{{ list.price | currency : "INR" }}</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>Clothes</h3>
+  <div class="d-flex">
+    <div class="display" *ngFor="let shop of clothList">
+      <div class="card">
+        <img [src]="shop.img" alt="img" />
+      </div>
+      <div>
+        <p class="text">{{ shop.name }}</p>
+        <p>{{ shop.brand }}</p>
+        <p>{{ shop.price | currency : "INR" }}</p>
+      </div>
+    </div>
+  </div>
+</div>

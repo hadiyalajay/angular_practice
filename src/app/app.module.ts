@@ -4,23 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { TablePointComponent } from './pages/public/table-point/table-point.component';
-import { CounterComponent } from './pages/public/counter/counter.component';
-import { ToDoListComponent } from './pages/public/to-do-list/to-do-list.component';
-import { DigitalClockComponent } from './pages/public/digital-clock/digital-clock.component';
+import { ProductListComponent } from './pages/public/product-list/product-list.component';
 import { PracticeComponent } from './pages/public/practice/practice.component';
-import { SwapNumbersComponent } from './pages/public/swap-numbers/swap-numbers.component';
-
 @NgModule({
-  declarations: [
-    AppComponent,
-    TablePointComponent,
-    CounterComponent,
-    ToDoListComponent,
-    DigitalClockComponent,
-    PracticeComponent,
-    SwapNumbersComponent,
-  ],
+  declarations: [AppComponent, ProductListComponent, PracticeComponent],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
