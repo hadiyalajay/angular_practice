@@ -7,21 +7,20 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./to-do-list.component.scss'],
 })
 export class ToDoListComponent {
-  listOfTask: any[] = [];
-
-  listForm: FormGroup;
+  listArray: any[] = [];
+  toDoListForm: FormGroup;
 
   constructor() {
-    this.listForm = new FormGroup({
+    this.toDoListForm = new FormGroup({
       task: new FormControl(''),
     });
   }
 
-  submit() {
-    this.listOfTask.push(this.listForm.value.task);
+  toDoListValue() {
+    this.listArray.push(this.toDoListForm.value.task);
   }
 
-  delete(indexNumber: number) {
-    this.listOfTask.splice(indexNumber, 1);
+  removeValue(indexNumber: number) {
+    this.listArray.splice(indexNumber, 1);
   }
 }

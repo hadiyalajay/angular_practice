@@ -1,0 +1,30 @@
+<div class="p-5">
+  <form [formGroup]="toDoListForm" (submit)="toDoListValue()">
+    <div class="form-group">
+      <label for="list">Task List</label>
+      <input
+        class="form-control input"
+        type="text"
+        id="list"
+        formControlName="task"
+      />
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary">Add</button>
+    </div>
+  </form>
+
+  <hr />
+  
+  <div
+    class="d-flex justify-content-between p-1"
+    *ngFor="let list of listArray; let ind = index"
+  >
+    <div>{{ ind + 1 }} . {{ list }}</div>
+    <div>
+      <button type="button" class="btn btn-danger" (click)="removeValue(ind)">
+        Remove
+      </button>
+    </div>
+  </div>
+</div>
