@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PracticeComponent } from './practice.component';
+import { DataSendComponent } from './data-send.component';
 
-describe('PracticeComponent', () => {
-  let component: PracticeComponent;
-  let fixture: ComponentFixture<PracticeComponent>;
+describe('DataSendComponent', () => {
+  let component: DataSendComponent;
+  let fixture: ComponentFixture<DataSendComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PracticeComponent]
+      declarations: [DataSendComponent]
     });
-    fixture = TestBed.createComponent(PracticeComponent);
+    fixture = TestBed.createComponent(DataSendComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

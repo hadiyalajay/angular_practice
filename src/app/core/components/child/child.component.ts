@@ -6,5 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./child.component.scss'],
 })
 export class ChildComponent {
-  @Input() item = 0;
+  @Input() data!: {
+    name: String;
+    image: String;
+    price: Number;
+    category: String;
+  };
 }

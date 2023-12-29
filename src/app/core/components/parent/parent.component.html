@@ -1,6 +1,6 @@
 <div class="p-5">
-  <p>Parent to child data trasfer</p>
-  <app-child [item]="data"></app-child>
-
-  <button class="btn btn-primary" (click)="updateValue()">Change Value</button>
+  <h4>Parent to child data trasfer</h4>
+  <div *ngFor="let product of electronicsProduct">
+    <app-child [data]="product"></app-child>
+  </div>
 </div>

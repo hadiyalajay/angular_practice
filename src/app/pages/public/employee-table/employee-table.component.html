@@ -1,0 +1,48 @@
+<div>
+  <div class="p-5">
+    <form [formGroup]="employeeListForm" (submit)="employeeList()">
+      <div class="form-group d-flex">
+        <div>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            formControlName="name"
+          />
+        </div>
+        <div class="pl-3">
+          <label for="jobDescription">Job Description</label>
+          <input
+            type="text"
+            class="form-control"
+            id="jobDescription"
+            formControlName="jobDescription"
+          />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <div class="p-5">
+    <table *ngIf="employeeArray.length">
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>job Description</th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let list of employeeArray; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ list.name }}</td>
+        <td>{{ list.jobDescription }}</td>
+        <td>
+          <button type="button" class="btn btn-primary" (click)="remove(i)">
+            Remove
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
