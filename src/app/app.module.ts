@@ -11,6 +11,7 @@ import { DataSendComponent } from './core/components/data-send/data-send.compone
 import { DataReceiveComponent } from './core/components/data-receive/data-receive.component';
 import { EmployeeTableComponent } from './pages/public/employee-table/employee-table.component';
 import { CounterComponent } from './pages/public/counter/counter.component';
+import { CountryListComponent } from './pages/public/country-list/country-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CounterComponent } from './pages/public/counter/counter.component';
     DataSendComponent,
     DataReceiveComponent,
     EmployeeTableComponent,
-    CounterComponent
+    CounterComponent,
+    CountryListComponent
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],

@@ -11,4 +11,8 @@ export class CounterComponent {
   counter(type: string) {
     type == 'plus' ? this.count++ : this.count--;
   }
+
+  reset() {
+    this.count = 0;
+  }
 }
