@@ -1,26 +1,24 @@
 table,
-th,
-td {
-  padding: 20px;
-}
-
-th,
-td {
+td,
+th {
   border: 1px solid black;
-}
-
-.odd {
-  background-color: #ffcc00;
-}
-
-.even {
-  background-color: #ff9900;
+  padding: 15px;
 }
 
 .first {
-  color: blue;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 800;
 }
 
-.last {
-  color: darkblue;
+.last {  
+  font-family: cursive;
+  font-weight: 500;
+}
+
+.odd {
+  background-color: skyblue;
+}
+
+.even {
+  background-color: orange;
 }

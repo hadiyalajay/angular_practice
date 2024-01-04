@@ -6,41 +6,41 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-list.component.scss'],
 })
 export class UserListComponent {
-  usersdetail = [
+  userDetail = [
     {
-      name: 'Jaydip',
-      number: 9898989898,
-      email: 'jaydip@7112',
-      age: 22,
-      dep:'Account Manager'
-    },
-    {
-      name: 'Pradip',
-      number: 7878787878,
-      email: 'pradip@777',
-      age: 25,
-      dep:'Designer'
-    },
-    {
-      name: 'Kuldip',
-      number: 7373737373,
-      email: 'kuldip@7226',
-      age: 26,
-      dep:'C.E.O'
-    },
-    {
-      name: 'Sanjay',
-      number: 9955605560,
-      email: 'sanjay@5560',
-      age: 24,
-      dep:'Finance Manager'
-    },
-    {
-      name: 'Ashok',
-      number: 9999998888,
-      email: 'ashok@9999',
+      name: 'Hadiyal Jaydip',
+      number: 9899786543,
+      dep: 'Account Manager',
       age: 23,
-      dep:'Business Man'
+      email: 'jaydip@gmail.com',
+    },
+    {
+      name: 'Hadiyal Sanjay',
+      number: 9993456343,
+      dep: 'Finance Manager',
+      age: 25,
+      email: 'sanjay112@gmail.com',
+    },
+    {
+      name: 'Lakum Kuldip',
+      number: 9090988776,
+      dep: 'C.E.O',
+      age: 26,
+      email: 'lakumkuldip777@gmail.com',
+    },
+    {
+      name: 'Dabhi Mahesh',
+      number: 9876543210,
+      dep: 'Driver',
+      age: 27,
+      email: 'dabhimahesh55@gmail.com',
+    },
+    {
+      name: 'Chauhan Devrang',
+      number: 7778886665,
+      dep: 'MIS ( HR.Department )',
+      age: 22,
+      email: 'devrang4516@gmail.com',
     },
   ];
 }

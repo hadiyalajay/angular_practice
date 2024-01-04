@@ -5,33 +5,33 @@
         <th>#</th>
         <th>Name</th>
         <th>Department</th>
-        <th>Number</th>
         <th>Email</th>
+        <th>Number</th>
         <th>Age</th>
       </tr>
     </thead>
     <tbody>
       <tr
         *ngFor="
-          let user of usersdetail;
+          let user of userDetail;
           let i = index;
-          let oddItem = odd;
-          let evenItem = even;
-          let firstItem = first;
-          let lastItem = last
+          let firstLine = first;
+          let lastLine = last;
+          let oddNumberRow = odd;
+          let evenNumberRow = even
         "
         [ngClass]="{
-          odd: oddItem,
-          even: evenItem,
-          first: firstItem,
-          last: lastItem
+          first: firstLine,
+          last: lastLine,
+          odd: oddNumberRow,
+          even: evenNumberRow
         }"
       >
         <td>{{ i + 1 }}</td>
         <td>{{ user.name }}</td>
         <td>{{ user.dep }}</td>
-        <td>{{ user.number }}</td>
         <td>{{ user.email }}</td>
+        <td>{{ user.number }}</td>
         <td>{{ user.age }}</td>
       </tr>
     </tbody>
