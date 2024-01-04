@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IUserDetailList } from 'src/app/core/interface/user-list';
 
 @Component({
   selector: 'app-user-list',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-list.component.scss'],
 })
 export class UserListComponent {
-  userDetail = [
+  userDetail: IUserDetailList[] = [
     {
       name: 'Hadiyal Jaydip',
       number: 9899786543,
@@ -39,7 +40,7 @@ export class UserListComponent {
       name: 'Chauhan Devrang',
       number: 7778886665,
       dep: 'MIS ( HR.Department )',
-      age: 22,
+      age: 24,
       email: 'devrang4516@gmail.com',
     },
   ];
