@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IEmp } from '../../../core/interface/emp';
+import { IEmp } from '../../../../core/interface/emp';
 
 @Component({
   selector: 'app-interpolation',
