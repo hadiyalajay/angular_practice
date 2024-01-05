@@ -1,0 +1,40 @@
+<div class="p-5">
+  <!-- interpolation -->
+  <div>
+    <h4>{{ projectName }}</h4>
+    <div class="p-5">
+      <p>{{ emp.name }}</p>
+      <p>{{ emp.position }}</p>
+    </div>
+  </div>
+
+  <!-- string concatination -->
+  <div>
+    <p>{{ "Wel Come " + personName }}</p>
+  </div>
+
+  <!-- calculations -->
+  <div>
+    <p>{{ 5 + 5 }}</p>
+    <p>{{ 7 - 5 }}</p>
+    <p>{{ 5 * 5 }}</p>
+  </div>
+
+  <div>
+    <p>Price : {{ quantity * price }}</p>
+    <p>{{ finalTotal() }}</p>
+  </div>
+
+  <!-- javascript method -->
+  <div>
+    <p>project Name length : {{ projectName.length }}</p>
+    <p>project Name includes : {{ projectName.includes("e") }}</p>
+    <p>Upper Case: {{ projectName.toUpperCase() }}</p>
+    <p>Lower Case: {{ projectName.toLowerCase() }}</p>
+    <p>Index of : {{ projectName.indexOf("P") }}</p>
+  </div>
+
+  <div>
+    <Button class="btn btn-primary">{{ editMode ? "Update" : "Edit" }}</Button>
+  </div>
+</div>

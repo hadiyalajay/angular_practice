@@ -1,4 +1,4 @@
-export interface IEmployeetable{
-    name : string,
-    jobDescription: string
+export interface IEmployeetable {
+  name: string;
+  jobDescription: string;
 }

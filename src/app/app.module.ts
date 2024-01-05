@@ -11,7 +11,8 @@ import { DataSendComponent } from './core/components/data-send/data-send.compone
 import { DataReceiveComponent } from './core/components/data-receive/data-receive.component';
 import { EmployeeTableComponent } from './pages/public/employee-table/employee-table.component';
 import { CounterComponent } from './pages/public/counter/counter.component';
-import { UserListComponent } from './pages/public/user-list/user-list.component';
+import { UserListComponent } from './core/components/user-list/user-list.component';
+import { InterpolationComponent } from './pages/account/interpolation/interpolation.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { UserListComponent } from './pages/public/user-list/user-list.component'
     DataReceiveComponent,
     EmployeeTableComponent,
     CounterComponent,
-    UserListComponent
+    UserListComponent,
+    InterpolationComponent
     
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
